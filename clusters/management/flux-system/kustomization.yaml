@@ -4,5 +4,5 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - apps.yaml
-- machine-provisioner.yaml
-- gobal.yaml
+# - machine-provisioner.yaml
+- global.yaml
