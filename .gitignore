@@ -1,0 +1,4 @@
+kubeconfig.yaml
+identity*
+known_hosts
+bootstrap.txt

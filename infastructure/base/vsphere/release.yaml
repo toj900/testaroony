@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: vsphere-cluster
+  namespace: vsphere-cluster
+spec:
+  chart:
+    spec:
+      chart: ./vmware-cluster
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: GitRepository
+        name: vsphere-cluster
+        namespace: flux-system
+      version: '0.1.0'
+  interval: 1m0s
+  valuesFrom:
+  - kind: ConfigMap
+    name: provisioner-values
