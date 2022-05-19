@@ -11,7 +11,7 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/toj900/testaroony.git
+  url: https://github.com/toj900/testaroony.git
   ignore:
     # Ignore everything except for the vsphere folder
     /*
